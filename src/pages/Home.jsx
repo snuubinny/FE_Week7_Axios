@@ -9,9 +9,7 @@ const Home = () => {
 
   useEffect(() => {
     axios
-      .get("https://reqres.in/api/users", {
-        params: { per_page: 9 } // 페이지당 9명의 사용자 요청
-      })
+      .get("https://reqres.in/api/users?page=1&per_page=9")
       .then((res) => {
         setUsers(res.data.data);
       })

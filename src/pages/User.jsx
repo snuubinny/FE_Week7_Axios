@@ -23,9 +23,9 @@ const User = () => {
 
   return (
     <div>
-      <h1>User Info</h1>
+      <h1>User Infomation</h1>
       <img src={user.avatar} />
-      <p>Name: {`${user.first_name} ${user.last_name}`}</p>
+      <h2> {`${user.first_name} ${user.last_name}`}</h2>
       <p>Email: {user.email}</p>
     </div>
   );

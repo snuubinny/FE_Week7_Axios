@@ -20,7 +20,7 @@ export default function Card({ avatar, name, id}) {
   
     return (
       <Wrapper id={id} onClick={() => navigate(`/user/${id}`)}>
-        <Photo src={avatar} alt={`${name}'s Avatar`} />
+        <Photo src={avatar} />
         <Margin height={10}/>
         <a>{name}</a>
       </Wrapper>
