@@ -18,6 +18,16 @@ const Wrapper = styled.div`
   position: relative;
 `;
 
+export const CardContainer = styled.div`
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+`;
+
 const Layout = () => {
   return (
     <BackGround>
